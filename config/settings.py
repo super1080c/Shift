@@ -122,3 +122,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# ログインしたらトップページへ
+LOGIN_REDIRECT_URL = 'index'
+# ログインしていない人が飛ばされる場所
+LOGIN_URL = 'login'

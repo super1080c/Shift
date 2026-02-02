@@ -20,9 +20,14 @@ class Attendance(models.Model):
     clock_in_at = models.DateTimeField("出勤時刻", null=True, blank=True)
     clock_out_at = models.DateTimeField("退勤時刻", null=True, blank=True)
     
+    # ★追加：休憩用
+    break_start_at = models.DateTimeField("休憩開始", null=True, blank=True)
+    break_end_at = models.DateTimeField("休憩終了", null=True, blank=True)
+    
     # 勤務状況の管理
     STATUS_CHOICES = [
         ('working', '勤務中'),
+        ('on_break', '休憩中'), # ★追加
         ('finished', '退勤済'),
         ('correction_pending', '修正申請中'),
     ]

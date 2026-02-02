@@ -1,0 +1,9 @@
+# Pythonのゴミファイル
+__pycache__/
+*.py[cod]
+
+# Dockerのゴミファイル
+.DS_Store
+
+# データベースファイル（GitHubには上げないのが鉄則）
+db.sqlite3
